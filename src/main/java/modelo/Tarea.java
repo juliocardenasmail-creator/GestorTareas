@@ -61,11 +61,12 @@ public class Tarea {
 
     @Override
     public String toString() {
-        return String.format("[%s] %s | %s | Creada: %s",
-                completada ? "✓" : " ",
-                getTipo(),
-                descripcion,
-                fechaCreacion);
+    return String.format("%s [%s] %s | %s | Creada: %s",
+            completada ? "✓" : " ",
+            id,
+            getTipo(),
+            descripcion,
+            fechaCreacion);
     }
 
     /**
